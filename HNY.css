@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Glowing Title */
+.glowing-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    animation: glow-pulse 1.5s infinite alternate;
+}
+
+/* Glowing Quotes */
+.glowing-quote {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #00ff00;
+    animation: glow-pulse 2s infinite alternate;
+}
+
+/* Hover Effect */
+.hover-effect:hover {
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff00;
+    transition: 0.3s ease-in-out;
+}
+
+/* Best Wishes Signature */
+.best-wishes {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #00ff00;
+    text-align: center;
+    z-index: 2;
+    animation: glow-pulse 2s infinite alternate;
+}
+
+.signature {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0f0;
+    text-shadow: 0 0 15px #0f0, 0 0 25px #00ff00;
+}
+
+/* Glowing Animation */
+@keyframes glow-pulse {
+    from {
+        text-shadow: 0 0 10px #0f0, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+/* Matrix Background Canvas */
+#matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+}
